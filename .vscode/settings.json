@@ -1,0 +1,10 @@
+{
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.removeUnusedImports": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "css.customData": [".vscode/css-custom-data.json"]
+}

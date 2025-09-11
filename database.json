@@ -1,0 +1,23 @@
+{
+  "defaultEnv": "local",
+  "local": {
+    "driver": "pg",
+    "user": { "ENV": "PGSQL_USER" },
+    "password": { "ENV": "PGSQL_PASSWORD" },
+    "host": { "ENV": "PGSQL_HOST" },
+    "database": { "ENV": "PGSQL_DATABASE" },
+    "port": { "ENV": "PGSQL_PORT" }
+  },
+  "prod": {
+    "driver": "pg",
+    "user": { "ENV": "PGSQL_USER" },
+    "password": { "ENV": "PGSQL_PASSWORD" },
+    "host": { "ENV": "PGSQL_HOST" },
+    "database": { "ENV": "PGSQL_DATABASE" },
+    "port": { "ENV": "PGSQL_PORT" },
+    "ssl": {
+      "sslrootcert": "ca-certificate.crt",
+      "sslmode": "require"
+    }
+  }
+}
