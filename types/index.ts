@@ -11,3 +11,25 @@ export interface User {
   created_at: Date;
   updated_at: Date;
 }
+
+export interface Tour {
+  id: number;
+  name: string;
+  description?: string;
+  date?: string;
+  status: string;
+  created_by?: number;
+  created_at?: Date;
+  updated_at?: Date;
+}
+
+export interface Task {
+  id: number;
+  name: string;
+  description?: string;
+  tour_id: number;
+  assignedTo?: User;
+  status: string;
+  created_at?: Date;
+  updated_at?: Date;
+}

@@ -1,5 +1,9 @@
+"use client";
+
+import { ToursAndTasks } from "@/components/ToursAndTasks";
+
 const Page = () => {
-  return <div>Tours and tasks</div>;
+  return <ToursAndTasks />;
 };
 
 export default Page;
